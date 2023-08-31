@@ -1,0 +1,6 @@
+[book]
+authors = ["Steve Myers"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Bitcoin Dev Kit (1.0) Documentation"
