@@ -17,20 +17,18 @@ Follow these steps to use BDK in your own rust project with the async `esplora` 
    cargo init my_bdk_app
    cd my_bdk_app
    ```
-2. Add `bdk` to your `Cargo.toml` file. ~~Find the latest `BDK@1.0.0` release on [`crates.io`](https://crates.io/crates/bdk/versions).~~:
+2. Add `bdk` to your `Cargo.toml` file. Find the latest `bdk@1` release on [`crates.io`](https://crates.io/crates/bdk/versions), for example:
    ```shell
-    cargo add bdk --git "https://github.com/bitcoindevkit/bdk.git"
+    cargo add bdk@1.0.0-alpha.1
    ```
 3. Add other required dependencies:
-   ```shell 
-   cargo add bdk --git "https://github.com/bitcoindevkit/bdk.git"
-   cargo add bdk_chain --git "https://github.com/bitcoindevkit/bdk.git"
-   cargo add bdk_esplora --git "https://github.com/bitcoindevkit/bdk.git"
-   cargo add bdk_file_store --git "https://github.com/bitcoindevkit/bdk.git"
+   ```shell
+   cargo add bdk_esplora@0.3.0
+   cargo add bdk_file_store@0.2.0
    cargo add tokio@1 --features "rt,rt-multi-thread,macros"
    ```
 
-See the [Wallet with Async Esplora](examples/wallet_async_esplora.md) tutorial for how to create and sync a wallet.
+See the [Wallet with Async Esplora](tutorials/wallet_async_esplora.md) tutorial for how to create and sync a wallet.
 
 ### Contributing to BDK
 
